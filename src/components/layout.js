@@ -35,7 +35,6 @@ const Layout = ({ children }) => {
           </div>
         </div>
       </nav>
-      <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
           margin: `0 auto`,
