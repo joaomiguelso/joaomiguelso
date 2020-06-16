@@ -20,8 +20,8 @@ const IndexPage = () => (
         <div className="container">
           <div class="columns">
             <div class="column is-two-thirds">
-              <h1 className="title is-1" style={{ fontSize: "3.6em"}}>João Oliveira</h1>
-              <h2 className="subtitle is-2 has-text-danger" style={{ fontSize: "2.6em"}}>Front-end Developer</h2>
+              <h1 className="title is-1" style={{ fontSize: "3.25em"}}>João Oliveira</h1>
+              <h2 className="subtitle is-2 has-text-danger" style={{ fontSize: "2.25em"}}>Front-end Developer</h2>
               <br />
               <p className="is-5" style={{ maxWidth: "600px", fontSize: "1.2em"}}>
                 Since beginning my journey as a web developer nearly 3 years ago, I've done remote work for companies to create/collaborate in digital products for both business and consumer use.
