@@ -8,9 +8,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,6 +25,16 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <nav class="navbar is-link">
+        <div class="container">
+          <div class="navbar-brand">
+            <Link to="/" class="navbar-item">
+              <img src="https://bulma.io/images/bulma-logo-white.png"
+                alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="112" height="28" />
+            </Link>
+          </div>
+        </div>
+      </nav>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
@@ -34,10 +44,14 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
+        <footer class="footer">
+          <div class="container has-text-centered">
+            <h5 class="title is-5">João Oliveira</h5>
+            <p>© {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+              <a href="https://www.gatsbyjs.org">Gatsby</a>
+            </p>
+          </div>
         </footer>
       </div>
     </>
