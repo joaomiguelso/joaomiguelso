@@ -17,23 +17,25 @@ const IndexPage = () => (
 
       <SEO title="Home" />
 
-      <section id="cv-top" className="section">
+      <section id="cv-top" className="section is-primary">
+        <br />
         <div className="container">
           <div class="columns">
             <div class="column is-two-thirds">
               <h1 className="title is-1">João Oliveira</h1>
               <h2 className="subtitle is-2 has-text-primary">Front-end Developer</h2>
               <br />
-              <p className="is-5" style={{ maxWidth: "800px" }}>Since beginning my journey as a web developer nearly 3 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</p>
+              <p className="is-5" style={{ maxWidth: "600px" }}>Since beginning my journey as a web developer nearly 3 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</p>
             </div>
             <div class="column is-one-thirds">
               <img src="https://media-exp1.licdn.com/dms/image/C4D03AQECzxwishb5yw/profile-displayphoto-shrink_400_400/0?e=1597881600&v=beta&t=Znx3dAKrrvlj3Cj-bmOqTZGgev7Jnzg-qK9nF0Ckkkk" />
             </div>
           </div>
+          <br />
         </div>
       </section>
 
-      <hr className="hr" />
+      <hr className="hr has-background-primary" />
 
       <section id="cv-skills" className="section">
         <div className="container">
@@ -124,6 +126,34 @@ const IndexPage = () => (
         </div>
       </section>
 
+      <br />
+
+      <section id="contacts" className="section">
+        <div className="container">
+          <div class="columns">
+            <div class="column is-one-third">
+              <h2 className="title is-2">Start a project</h2>
+              <br />
+              <h5 class="subtitle is-5" style={{ maxWidth: "350px" }}>Interested in working together? <br/>We should queue up a chat. <br/>I’ll buy the coffee.</h5>
+            </div>
+            <div class="column">
+              <form name="contact" netlify>
+                <div class="field">
+                  <label class="label">Name</label>
+                  <input class="input" type="text" name="name" placeholder="Type your name..." />
+                </div>
+                <div class="field">
+                  <label class="label">Email</label>
+                  <input class="input" type="email" name="email" placeholder="Type your email..." />
+                </div>
+                <div class="control">
+                  <button type="submit" class="button is-primary">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </Layout>
 )
