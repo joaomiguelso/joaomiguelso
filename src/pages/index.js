@@ -13,29 +13,38 @@ const methodologies = ["Agile", "Scrum"]
 
 const IndexPage = () => (
   <Layout>
-    <div className="container">
+    <SEO title="Home" />
 
-      <SEO title="Home" />
-
-      <section id="cv-top" className="section is-primary">
-        <br />
+    <section id="cv-top" className="hero is-fullheight is-dark is-bold">
+      <div class="hero-body">
         <div className="container">
           <div class="columns">
             <div class="column is-two-thirds">
-              <h1 className="title is-1">João Oliveira</h1>
-              <h2 className="subtitle is-2 has-text-primary">Front-end Developer</h2>
+              <h1 className="title is-1" style={{ fontSize: "3.6em"}}>João Oliveira</h1>
+              <h2 className="subtitle is-2 has-text-danger" style={{ fontSize: "2.6em"}}>Front-end Developer</h2>
               <br />
-              <p className="is-5" style={{ maxWidth: "600px" }}>Since beginning my journey as a web developer nearly 3 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</p>
+              <p className="is-5" style={{ maxWidth: "600px", fontSize: "1.2em"}}>
+                Since beginning my journey as a web developer nearly 3 years ago, I've done remote work for companies to create/collaborate in digital products for both business and consumer use.
+              </p>
+              <br />
+              <p className="is-5" style={{ maxWidth: "600px", fontSize: "1.2em"}}>
+                I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.
+              </p>
+              <br />
             </div>
             <div class="column is-one-thirds">
-              <img src="https://media-exp1.licdn.com/dms/image/C4D03AQECzxwishb5yw/profile-displayphoto-shrink_400_400/0?e=1597881600&v=beta&t=Znx3dAKrrvlj3Cj-bmOqTZGgev7Jnzg-qK9nF0Ckkkk" />
+              <figure class="image">
+                <img class="is-rounded" src="https://media-exp1.licdn.com/dms/image/C4D03AQECzxwishb5yw/profile-displayphoto-shrink_400_400/0?e=1597881600&v=beta&t=Znx3dAKrrvlj3Cj-bmOqTZGgev7Jnzg-qK9nF0Ckkkk" />
+              </figure>
             </div>
           </div>
-          <br />
         </div>
-      </section>
+      </div>
+    </section>
 
-      <hr className="hr has-background-primary" />
+    <div className="container box">
+
+      <hr className="hr has-background-danger" />
 
       <section id="cv-skills" className="section">
         <div className="container">
@@ -126,7 +135,7 @@ const IndexPage = () => (
         </div>
       </section>
 
-      <br />
+      <hr className="hr" />
 
       <section id="contacts" className="section">
         <div className="container">
@@ -134,7 +143,7 @@ const IndexPage = () => (
             <div class="column is-one-third">
               <h2 className="title is-2">Start a project</h2>
               <br />
-              <h5 class="subtitle is-5" style={{ maxWidth: "350px" }}>Interested in working together? <br/>We should queue up a chat. <br/>I’ll buy the coffee.</h5>
+              <h5 class="subtitle is-5" style={{ maxWidth: "350px" }}>Interested in working together? <br />We should queue up a chat. <br />I’ll buy the coffee.</h5>
             </div>
             <div class="column">
               <form name="contact" netlify>
@@ -146,15 +155,21 @@ const IndexPage = () => (
                   <label class="label">Email</label>
                   <input class="input" type="email" name="email" placeholder="Type your email..." />
                 </div>
-                <div class="control">
-                  <button type="submit" class="button is-primary">Send</button>
+                <div class="field">
+                  <label class="label">Message</label>
+                  <textarea class="textarea" type="message" name="message" placeholder="Type your message..."></textarea>
                 </div>
+                <div class="control">
+                  <button type="submit" class="button is-link">Send</button>
+                </div>
+
               </form>
             </div>
           </div>
         </div>
       </section>
     </div>
+    <br/>
   </Layout>
 )
 

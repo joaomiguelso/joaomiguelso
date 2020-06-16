@@ -25,12 +25,13 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <main>{children}</main>
-      <footer class="footer">
+      <main className="has-background-light">{children}</main>
+      <footer class="footer has-background-dark">
         <div class="container has-text-centered">
-          <h6 class="title is-6">© {new Date().getFullYear()}, Built by João Oliveira</h6>
+          <br />
+          <h6 class="title is-6 has-text-white">© {new Date().getFullYear()}, Built by João Oliveira</h6>
           <div class="made-by-bulma">
-            <a href="https://bulma.io"><img src="https://bulma.io/images/made-with-bulma--black.png" alt="Made with Bulma" width="163" height="31" /></a>
+            <a href="https://bulma.io"><img src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="163" height="31" /></a>
           </div>
         </div>
       </footer>
