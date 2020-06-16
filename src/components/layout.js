@@ -25,34 +25,15 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <nav class="navbar is-link">
-        <div class="container">
-          <div class="navbar-brand">
-            <Link to="/" class="navbar-item">
-              <img src="https://bulma.io/images/bulma-logo-white.png"
-                alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="112" height="28" />
-            </Link>
+      <main>{children}</main>
+      <footer class="footer">
+        <div class="container has-text-centered">
+          <h6 class="title is-6">© {new Date().getFullYear()}, Built by João Oliveira</h6>
+          <div class="made-by-bulma">
+            <a href="https://bulma.io"><img src="https://bulma.io/images/made-with-bulma--black.png" alt="Made with Bulma" width="163" height="31" /></a>
           </div>
         </div>
-      </nav>
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer class="footer">
-          <div class="container has-text-centered">
-            <h5 class="title is-5">João Oliveira</h5>
-            <p>© {new Date().getFullYear()}, Built with
-          {` `}
-              <a href="https://www.gatsbyjs.org">Gatsby</a>
-            </p>
-          </div>
-        </footer>
-      </div>
+      </footer>
     </>
   )
 }
