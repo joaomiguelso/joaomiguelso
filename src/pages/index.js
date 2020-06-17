@@ -15,26 +15,26 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
 
-    <section id="cv-top" className="hero is-fullheight is-dark is-bold">
+    <section id="cv-top" className="hero is-fullheight is-dark is-bold shadow-drop-2-center">
       <div class="hero-body">
         <div className="container">
           <div class="columns">
             <div class="column is-two-thirds">
-              <h1 className="title is-1" style={{ fontSize: "3.25em"}}>João Oliveira</h1>
-              <h2 className="subtitle is-2 has-text-danger" style={{ fontSize: "2.125em"}}>Front-end Developer</h2>
+              <h1 className="title is-1" style={{ fontSize: "3.25em" }}>João Oliveira</h1>
+              <h2 className="subtitle is-2 has-text-danger" style={{ fontSize: "2.125em" }}>Front-end Developer</h2>
               <br />
-              <p className="is-5" style={{ maxWidth: "600px", fontSize: "1.2em"}}>
-                Since beginning my journey as a web developer nearly 3 years ago, I've done remote work for companies to create/collaborate in digital products for both business and consumer use.
+              <p className="is-5" style={{ maxWidth: "600px", fontSize: "1.2em" }}>
+                Since beginning my journey as a web developer nearly 3 years ago, I've done remote work for companies to create/collaborate in digital products.
               </p>
               <br />
-              <p className="is-5" style={{ maxWidth: "600px", fontSize: "1.2em"}}>
-                I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.
+              <p className="is-5" style={{ maxWidth: "600px", fontSize: "1.2em" }}>
+                I'm quietly confident, naturally curious, and perpetually working on improving my chops one  problem at a time.
               </p>
               <br />
             </div>
             <div class="column is-one-thirds">
               <figure class="image">
-                <img class="is-rounded" src="https://media-exp1.licdn.com/dms/image/C4D03AQECzxwishb5yw/profile-displayphoto-shrink_400_400/0?e=1597881600&v=beta&t=Znx3dAKrrvlj3Cj-bmOqTZGgev7Jnzg-qK9nF0Ckkkk" />
+                <img class="is-rounded shadow-drop-2-center" src="https://media-exp1.licdn.com/dms/image/C4D03AQECzxwishb5yw/profile-displayphoto-shrink_400_400/0?e=1597881600&v=beta&t=Znx3dAKrrvlj3Cj-bmOqTZGgev7Jnzg-qK9nF0Ckkkk" />
               </figure>
             </div>
           </div>
@@ -42,40 +42,43 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <div className="container box">
+    <div className="container">
 
       <hr className="hr has-background-danger" />
 
       <section id="cv-skills" className="section">
         <div className="container">
-          <div class="columns">
-            <div class="column is-one-third">
+          <div class="columns is-multiline" style={{ display: "flex" }}>
+            <div class="column is-one-third is-full-mobile">
               <h2 className="title is-2">Skills</h2>
               <br />
               <h5 class="subtitle is-5" style={{ maxWidth: "350px" }}>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</h5>
             </div>
-            <div class="column">
-              <h5 class="title is-5" style={{ minWidth: "225px" }}>Languages</h5>
+            <div class="column is-half-mobile">
+              <h5 class="title is-5">Languages</h5>
               {languages.map((language) => <p>{language}</p>)}
             </div>
-            <div class="column">
+            <div class="column is-half-mobile">
               <h5 class="title is-5">Tools</h5>
               {tools.map((tool) => <p>{tool}</p>)}
             </div>
-            <div class="column">
+            <div class="column is-full-mobile">
               <h5 class="title is-5">Methodologies</h5>
               {methodologies.map((language) => <p>{language}</p>)}
             </div>
           </div>
         </div>
       </section>
+    </div>
+
+    <div className="container">
 
       <hr className="hr" />
 
       <section id="cv-experience" className="section">
         <div className="container">
           <div class="columns">
-            <div class="column is-one-third">
+            <div class="column is-one-third is-full-mobile">
               <h2 className="title is-2">Experience</h2>
               <br />
               <h5 class="subtitle is-5" style={{ maxWidth: "350px" }}>I'm proud to have worked with some awesome companies:</h5>
@@ -106,6 +109,9 @@ const IndexPage = () => (
           </div>
         </div>
       </section>
+    </div>
+
+    <div className="container">
 
       <hr className="hr" />
 
@@ -113,7 +119,7 @@ const IndexPage = () => (
         <div className="container">
           <div class="columns">
 
-            <div class="column is-one-third">
+            <div class="column is-one-third is-full-mobile">
               <h2 className="title is-2">Testimonials</h2>
               <br />
               <h5 class="subtitle is-5" style={{ maxWidth: "350px" }}>People I've worked with have said some nice things...</h5>
@@ -134,13 +140,16 @@ const IndexPage = () => (
           </div>
         </div>
       </section>
+    </div>
 
-      <hr className="hr" />
+    <div className="container has-background-light shadow-drop-2-center" style={{ width: "100%", maxWidth: "100%" }}>
 
-      <section id="contacts" className="section">
+      <hr className="hr has-background-link" />
+
+      <section id="contacts" className="section ">
         <div className="container">
           <div class="columns">
-            <div class="column is-one-third">
+            <div class="column is-one-third is-full-mobile">
               <h2 className="title is-2">Start a project</h2>
               <br />
               <h5 class="subtitle is-5" style={{ maxWidth: "350px" }}>Interested in working together? <br />We should queue up a chat. <br />I’ll buy the coffee.</h5>
@@ -168,9 +177,13 @@ const IndexPage = () => (
           </div>
         </div>
       </section>
+
+      <br />
+      <br />
+      <br />
     </div>
-    <br/>
-  </Layout>
+
+  </Layout >
 )
 
 export default IndexPage
