@@ -25,7 +25,7 @@ const IndexPage = () => (
               <h2 className="subtitle is-2 has-text-danger" style={{ fontSize: "2.125em" }}>Front-end Developer</h2>
               <br />
               <p className="is-5" style={{ maxWidth: "600px", fontSize: "1.2em" }}>
-                Since beginning my journey as a front-end developer nearly 3 years ago, I have been collaborating with various companies remotely, creating interesting digital products. I am a confident and naturally curious person. I constantly strive to improve my skills.
+                Since beginning my journey as a front-end developer nearly 3 years ago, I have been collaborating with various companies remotely, creating interesting digital products. <br />I am a confident and naturally curious person. <br />I constantly strive to improve my skills.
               </p>
               <br />
               <br />
@@ -86,17 +86,6 @@ const IndexPage = () => (
               <h5 class="subtitle is-5" style={{ maxWidth: "350px" }}>I am honoured to have worked with some outstanding companies:</h5>
             </div>
             <div class="column">
-
-              <h5 class="title is-5"><a href="https://whenwewonder.com/" className="has-text-link-dark">WhenWeWonder</a> | Front-end | 2020 </h5>
-              <div class="content">
-                <p>Built the Front End of the website of a Creative Agency based on given designs. </p>
-                <ul>
-                  <li>Applied the best practices of responsive web design</li>
-                  <li>Deployed the website using Netlify</li>
-                  <li>Worked with a remote team</li>
-                </ul>
-              </div>
-              <br />
               <h5 class="title is-5"><a href="https://marzeelabs.org/" className="has-text-danger-dark">Marzee Labs</a> | Front-end | 2020 - Current</h5>
               <div class="content">
                 <p>Working in building a web application for a Nanotechnology Laboratory using a JAMstack architecture.</p>
@@ -107,6 +96,17 @@ const IndexPage = () => (
                 </ul>
               </div>
               <br />
+              <h5 class="title is-5"><a href="https://whenwewonder.com/" className="has-text-link-dark">WhenWeWonder</a> | Front-end | 2020 </h5>
+              <div class="content">
+                <p>Built the Front End of the website of a Creative Agency based on given designs. </p>
+                <ul>
+                  <li>Applied the best practices of responsive web design</li>
+                  <li>Deployed the website using Netlify</li>
+                  <li>Worked with a remote team</li>
+                </ul>
+              </div>
+              <br />
+
               <h5 class="title is-5"><a href="https://www.preqin.com/" className="has-text-primary-dark">Preqin Solutions</a> | Front-end Lead | 2018 - 2020</h5>
               <div class="content">
                 <p>I advanced to a front-end lead role at Preqin Solutions.</p>
