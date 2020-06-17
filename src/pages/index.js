@@ -7,9 +7,10 @@ import SEO from "../components/seo"
 
 import "./mystyles.scss"
 
-const languages = ["HTML", "CSS", "Sass/SCSS", "JavaScript", "React", "React Native", "Node", "PHP", "Python"]
-const tools = ["GIT", "NPM", "Webpack", "Firebase", "Netlify", "Highcharts", "Docker"]
-const methodologies = ["Agile", "Scrum"]
+const languages = ["JavaScript", "HTML", "CSS", "SASS", "Python"]
+const frameworks = ["React", "React Native", "Redux", "Gatsby", "Bulma"]
+const tools = ["GIT", "NPM", "Webpack + Babel", "Jest + Enzyme", "Firebase", "Netlify", "Highcharts", "Docker"]
+const methodologies = ["Agile", "Scrum", "Functional Programming"]
 
 const IndexPage = () => (
   <Layout>
@@ -24,12 +25,9 @@ const IndexPage = () => (
               <h2 className="subtitle is-2 has-text-danger" style={{ fontSize: "2.125em" }}>Front-end Developer</h2>
               <br />
               <p className="is-5" style={{ maxWidth: "600px", fontSize: "1.2em" }}>
-                Since beginning my journey as a web developer nearly 3 years ago, I've done remote work for companies to create/collaborate in digital products.
+                Since beginning my journey as a front-end developer nearly 3 years ago, I have been collaborating with various companies remotely, creating interesting digital products. I am a confident and naturally curious person. I constantly strive to improve my skills.
               </p>
               <br />
-              <p className="is-5" style={{ maxWidth: "600px", fontSize: "1.2em" }}>
-                I'm quietly confident, naturally curious, and perpetually working on improving my chops one  problem at a time.
-              </p>
               <br />
             </div>
             <div class="column is-one-thirds">
@@ -52,17 +50,21 @@ const IndexPage = () => (
             <div class="column is-one-third is-full-mobile">
               <h2 className="title is-2">Skills</h2>
               <br />
-              <h5 class="subtitle is-5" style={{ maxWidth: "350px" }}>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</h5>
+              <h5 class="subtitle is-5" style={{ maxWidth: "350px" }}>I like to code from scratch as I enjoy bringing new ideas to life in the browser.</h5>
             </div>
             <div class="column is-half-mobile">
               <h5 class="title is-5">Languages</h5>
               {languages.map((language) => <p>{language}</p>)}
             </div>
             <div class="column is-half-mobile">
+              <h5 class="title is-5">Frameworks</h5>
+              {frameworks.map((framw) => <p>{framw}</p>)}
+            </div>
+            <div class="column is-half-mobile">
               <h5 class="title is-5">Tools</h5>
               {tools.map((tool) => <p>{tool}</p>)}
             </div>
-            <div class="column is-full-mobile">
+            <div class="column is-half-mobile">
               <h5 class="title is-5">Methodologies</h5>
               {methodologies.map((language) => <p>{language}</p>)}
             </div>
@@ -81,28 +83,49 @@ const IndexPage = () => (
             <div class="column is-one-third is-full-mobile">
               <h2 className="title is-2">Experience</h2>
               <br />
-              <h5 class="subtitle is-5" style={{ maxWidth: "350px" }}>I'm proud to have worked with some awesome companies:</h5>
+              <h5 class="subtitle is-5" style={{ maxWidth: "350px" }}>I am honoured to have worked with some outstanding companies:</h5>
             </div>
             <div class="column">
-              <h5 class="title is-5">Preqin Solutions | Front-end Lead | 2018 - 2020</h5>
+
+              <h5 class="title is-5"><a href="https://whenwewonder.com/" className="has-text-link-dark">WhenWeWonder</a> | Front-end | 2020 </h5>
               <div class="content">
-                <p>I advanced to a front-end lead role at Preqin Solutions.</p>
+                <p>Built the Front End of the website of a Creative Agency based on given designs. </p>
                 <ul>
-                  <li>Front-end, JavaScript and React.js development to create complex large-scale responsive FinTech app.</li>
-                  <li>Worked with different remote Agile teams</li>
-                  <li>Managing and mentoring less experienced developers.</li>
-                  <li>Research, establish, document, and own front-end coding best practices, documentation and design system.</li>
-                  <li>Research and development with emerging technologies and frameworks.</li>
+                  <li>Applied the best practices of responsive web design</li>
+                  <li>Deployed the website using Netlify</li>
+                  <li>Worked with a remote team</li>
                 </ul>
               </div>
               <br />
-              <h5 class="title is-5">Shastar Vidiya | Mobile Developer | 2017 - 2018</h5>
+              <h5 class="title is-5"><a href="https://marzeelabs.org/" className="has-text-danger-dark">Marzee Labs</a> | Front-end | 2020 - Current</h5>
               <div class="content">
-                <p>This role in Shastar Vidiya enabled me to gain experience in mobile development and as a developer in general. </p>
+                <p>Working in building a web application for a Nanotechnology Laboratory using a JAMstack architecture.</p>
                 <ul>
-                  <li>React Native, JavaScript and Firebase development to create mobile app for both iOS and Android.</li>
+                  <li>Applied the best practices of responsive web design</li>
+                  <li>Deployed the website using Netlify</li>
+                  <li>Worked with a remote team</li>
+                </ul>
+              </div>
+              <br />
+              <h5 class="title is-5"><a href="https://www.preqin.com/" className="has-text-primary-dark">Preqin Solutions</a> | Front-end Lead | 2018 - 2020</h5>
+              <div class="content">
+                <p>I advanced to a front-end lead role at Preqin Solutions.</p>
+                <ul>
+                  <li>Front-end, JavaScript and React.js development to create complex large-scale responsive FinTech app;</li>
+                  <li>Worked with different remote Agile teams;</li>
+                  <li>Manage and mentor junior developers;</li>
+                  <li>Research, establish, document, and own front-end coding best practices, documentation and design system;</li>
+                  <li>Research and development with emerging technologies and frameworks;</li>
+                </ul>
+              </div>
+              <br />
+              <h5 class="title is-5"><a href="https://www.shastarvidiya.org/" className="has-text-warning-dark">Shastar Vidiya</a> | Mobile Developer | 2017 - 2018</h5>
+              <div class="content">
+                <p>My role in Shastar Vidiya enabled me to gain experience in mobile development and grow as a developer in general. </p>
+                <ul>
+                  <li>Worked on React Native, JavaScript, and Firebase development to create mobile app for both iOS and Android;</li>
                   <li>Worked with a remote Agile team</li>
-                  <li>Research, establish, document, and own front-end coding best practices, documentation and design system.</li>
+                  <li>Researched, established, documented, and owned front-end coding best practices, documentation and design system.</li>
                 </ul>
               </div>
             </div>
@@ -122,10 +145,10 @@ const IndexPage = () => (
             <div class="column is-one-third is-full-mobile">
               <h2 className="title is-2">Testimonials</h2>
               <br />
-              <h5 class="subtitle is-5" style={{ maxWidth: "350px" }}>People I've worked with have said some nice things...</h5>
+              <h5 class="subtitle is-5" style={{ maxWidth: "350px" }}>Nice things people have said about me...</h5>
             </div>
             <div class="column">
-              <h5 class="title is-5">Carlos Diaz | Preqin Solutions </h5>
+              <h5 class="title is-5">Carlos Diaz | Preqin Solutions |  Head of Software Engineering at Cox Automotive UK </h5>
               <div class="content">
                 <p>I had the opportunity to work with João in several projects at Preqin Solutions,
                 where he took on board the leadership of all the Front End project.
@@ -152,7 +175,7 @@ const IndexPage = () => (
             <div class="column is-one-third is-full-mobile">
               <h2 className="title is-2">Start a project</h2>
               <br />
-              <h5 class="subtitle is-5" style={{ maxWidth: "350px" }}>Interested in working together? <br />We should queue up a chat. <br />I’ll buy the coffee.</h5>
+              <h5 class="subtitle is-5" style={{ maxWidth: "350px" }}>Interested in working together? We should schedule a chat. I might also buy you a coffee.</h5>
             </div>
             <div class="column">
               <form name="contact" netlify>
