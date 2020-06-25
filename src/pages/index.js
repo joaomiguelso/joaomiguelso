@@ -5,6 +5,8 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+import "./index.scss"
+
 const languages = ["JavaScript", "HTML", "CSS", "SASS", "Python"]
 const frameworks = ["React", "React Native", "Redux", "Gatsby", "Bulma"]
 const tools = ["GIT", "NPM", "Webpack + Babel", "Jest + Enzyme", "Firebase", "Netlify", "Highcharts", "Docker"]
@@ -19,13 +21,12 @@ const IndexPage = () => (
         <div className="container">
           <div class="columns">
             <div class="column is-two-thirds">
-              <h1 className="title is-1" style={{ fontSize: "3.25em" }}>João Oliveira</h1>
-              <h2 className="subtitle is-2 has-text-danger" style={{ fontSize: "2.125em" }}>Web Developer</h2>
+              <h1 className="title is-1">João Oliveira</h1>
+              <h2 className="subtitle is-2 has-text-danger">Web Developer</h2>
               <br />
-              <p className="is-5" style={{ maxWidth: "600px", fontSize: "1.2em" }}>
-                Since beginning my journey as a web developer nearly 3 years ago, I have been collaborating with various companies remotely, creating interesting digital products.
-                <br />I am a confident and naturally curious person.
-                <br />I constantly strive to improve my skills.
+              <p className="is-5">
+                Since beginning my journey as a web developer I have been collaborating with various companies, creating interesting digital products.
+                <br />I am a confident and naturally curious person and constantly strive to improve my skills.
               </p>
               <br />
               <br />
@@ -176,7 +177,7 @@ const IndexPage = () => (
             <div class="column is-one-third is-full-mobile has-text-centered">
               <h1 className="title is-1">LET'S WORK <br/>TOGETHER</h1>
               <br />
-              <h5 class="subtitle is-5">Interested in working together? We should schedule a chat. I might also buy you a coffee.</h5>
+              <p>Interested in working together? We should schedule a chat. I might also buy you a coffee.</p>
               <br />
               <Link to={"contact"}><button class="button is-large is-link">Contact Me</button></Link>
             </div>

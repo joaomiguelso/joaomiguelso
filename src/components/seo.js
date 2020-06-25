@@ -69,6 +69,7 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     >
+      <link href="//db.onlinewebfonts.com/c/b81bb83abecd8eb743a1c7f9183d3047?family=SlateW01-Bold" rel="stylesheet" type="text/css"/>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     </Helmet>
   )
