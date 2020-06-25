@@ -26,12 +26,23 @@ const Layout = ({ children }) => {
   return (
     <>
       <main>{children}</main>
-      <footer class="footer has-background-grey-light">
+      <footer class="footer has-background-grey-dark">
         <div class="container has-text-centered">
-          <br />
-          <h6 class="title is-6">© {new Date().getFullYear()}, Built by João Oliveira</h6>
+          <h6 class="title is-6 has-text-white">© {new Date().getFullYear()}, Built by João Oliveira</h6>
+          <span class="icon is-large">
+            <a class="fa-stack fa-lg has-text-white" href="https://www.linkedin.com/in/joaomiguelso/">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </span>
+          <span class="icon is-large">
+            <a class="fa-stack fa-lg has-text-white" href="https://github.com/joaomiguelso">
+              <i class="fa fa-github"></i>
+            </a>
+          </span>
+          <br/>
+          <br/>
           <div class="made-by-bulma">
-            <a href="https://bulma.io"><img src="https://bulma.io/images/made-with-bulma--black.png" alt="Made with Bulma" width="163" height="31" /></a>
+            <a href="https://bulma.io"><img src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="163" height="31" /></a>
           </div>
         </div>
       </footer>

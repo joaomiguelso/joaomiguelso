@@ -5,8 +5,6 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
-import "./mystyles.scss"
-
 const languages = ["JavaScript", "HTML", "CSS", "SASS", "Python"]
 const frameworks = ["React", "React Native", "Redux", "Gatsby", "Bulma"]
 const tools = ["GIT", "NPM", "Webpack + Babel", "Jest + Enzyme", "Firebase", "Netlify", "Highcharts", "Docker"]
@@ -22,17 +20,19 @@ const IndexPage = () => (
           <div class="columns">
             <div class="column is-two-thirds">
               <h1 className="title is-1" style={{ fontSize: "3.25em" }}>João Oliveira</h1>
-              <h2 className="subtitle is-2 has-text-danger" style={{ fontSize: "2.125em" }}>Front-end Developer</h2>
+              <h2 className="subtitle is-2 has-text-danger" style={{ fontSize: "2.125em" }}>Web Developer</h2>
               <br />
               <p className="is-5" style={{ maxWidth: "600px", fontSize: "1.2em" }}>
-                Since beginning my journey as a front-end developer nearly 3 years ago, I have been collaborating with various companies remotely, creating interesting digital products. <br />I am a confident and naturally curious person. <br />I constantly strive to improve my skills.
+                Since beginning my journey as a web developer nearly 3 years ago, I have been collaborating with various companies remotely, creating interesting digital products.
+                <br />I am a confident and naturally curious person.
+                <br />I constantly strive to improve my skills.
               </p>
               <br />
               <br />
             </div>
             <div class="column is-one-thirds">
-              <figure class="image">
-                <img class="is-rounded shadow-drop-2-center" src="https://media-exp1.licdn.com/dms/image/C4D03AQECzxwishb5yw/profile-displayphoto-shrink_400_400/0?e=1597881600&v=beta&t=Znx3dAKrrvlj3Cj-bmOqTZGgev7Jnzg-qK9nF0Ckkkk" />
+              <figure id="profile-picture" class="image" style={{ maxWidth: "400px" }}>
+                <Image alt="Me" filename="profile.jpg" />
               </figure>
             </div>
           </div>
@@ -48,9 +48,10 @@ const IndexPage = () => (
         <div className="container">
           <div class="columns is-multiline" style={{ display: "flex" }}>
             <div class="column is-one-third is-full-mobile">
-              <h2 className="title is-2">Skills</h2>
+              <h2 className="title is-2">Skills &nbsp;<i class="fa fa-code"></i></h2>
               <br />
               <h5 class="subtitle is-5" style={{ maxWidth: "350px" }}>I like to code from scratch as I enjoy bringing new ideas to life in the browser.</h5>
+              <br />
             </div>
             <div class="column is-half-mobile">
               <h5 class="title is-5">Languages</h5>
@@ -81,7 +82,7 @@ const IndexPage = () => (
         <div className="container">
           <div class="columns">
             <div class="column is-one-third is-full-mobile">
-              <h2 className="title is-2">Experience</h2>
+              <h2 className="title is-2">Experience </h2>
               <br />
               <h5 class="subtitle is-5" style={{ maxWidth: "350px" }}>I am honoured to have worked with some outstanding companies:</h5>
             </div>
@@ -171,39 +172,21 @@ const IndexPage = () => (
 
       <section id="contacts" className="section ">
         <div className="container">
-          <div class="columns">
-            <div class="column is-one-third is-full-mobile">
-              <h2 className="title is-2">Start a project</h2>
+          <div class="columns is-centered">
+            <div class="column is-one-third is-full-mobile has-text-centered">
+              <h2 className="title is-2">Let's work together</h2>
               <br />
-              <h5 class="subtitle is-5" style={{ maxWidth: "350px" }}>Interested in working together? We should schedule a chat. I might also buy you a coffee.</h5>
-            </div>
-            <div class="column">
-              <form name="contact" netlify>
-                <div class="field">
-                  <label class="label">Name</label>
-                  <input class="input" type="text" name="name" placeholder="Type your name..." />
-                </div>
-                <div class="field">
-                  <label class="label">Email</label>
-                  <input class="input" type="email" name="email" placeholder="Type your email..." />
-                </div>
-                <div class="field">
-                  <label class="label">Message</label>
-                  <textarea class="textarea" type="message" name="message" placeholder="Type your message..."></textarea>
-                </div>
-                <div class="control">
-                  <button type="submit" class="button is-link">Send</button>
-                </div>
-
-              </form>
+              <h5 class="subtitle is-5">Interested in working together? We should schedule a chat. I might also buy you a coffee.</h5>
+              <br />
+              <Link to={"contact"}><button class="button is-large is-link">Contact Me</button></Link>
             </div>
           </div>
         </div>
       </section>
 
-      <br />
-      <br />
-      <br />
+    <br />
+    <br />
+    <br />
     </div>
 
   </Layout >
