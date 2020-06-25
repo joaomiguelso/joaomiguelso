@@ -13,7 +13,7 @@ class Contact extends React.Component {
         super(props);
 
         this.state = {
-            form: "project"
+            form: ""
         };
     }
 
@@ -30,22 +30,13 @@ class Contact extends React.Component {
                     <h1 className="title is-1">Let's talk</h1>
                     <h2 className="subtitle is-2">Plese select the topic...</h2>
                     <div class="control">
-                        <label class="radio">
-                            <input type="radio"
-                                name="answer"
-                                value="project"
-                                onClick={(e) => this.onSelectTopic(e)}
-                            />
-                                    &nbsp;Your project
-                            </label>&nbsp;
-                        <label class="radio">
-                            <input type="radio"
-                                name="answer"
-                                value="coffee"
-                                onClick={(e) => this.onSelectTopic(e)}
-                            />
-                                    &nbsp;Meeting for a coffee
-                            </label>
+                        <div class="select">
+                            <select>
+                                <option onClick={() => this.setState({ form: "" })}>Select topic</option>
+                                <option onClick={() => this.setState({ form: "project" })}>Your project</option>
+                                <option onClick={() => this.setState({ form: "coffee" })}>Meeting for a coffee</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </section>

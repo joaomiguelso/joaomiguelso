@@ -174,7 +174,7 @@ const IndexPage = () => (
         <div className="container">
           <div class="columns is-centered">
             <div class="column is-one-third is-full-mobile has-text-centered">
-              <h2 className="title is-2">Let's work together</h2>
+              <h1 className="title is-1">LET'S WORK <br/>TOGETHER</h1>
               <br />
               <h5 class="subtitle is-5">Interested in working together? We should schedule a chat. I might also buy you a coffee.</h5>
               <br />
