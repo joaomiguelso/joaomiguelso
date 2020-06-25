@@ -54,7 +54,8 @@ class Contact extends React.Component {
                             <h5 class="subtitle is-5" style={{ maxWidth: "350px" }}>Interested in working together? We should schedule a chat. I might also buy you a coffee.</h5>
                         </div>
                         <div class="column">
-                            <form name="contact-project" netlify>
+                            <form name="contact-project" netlify netlify-honeypot="bot-field" data-netlify="true">
+                                +   <input type="hidden" name="bot-field" />
                                 <div class="field">
                                     <label class="label">Name</label>
                                     <input class="input" type="text" name="name" placeholder="Name" />
@@ -98,7 +99,8 @@ class Contact extends React.Component {
                             <h5 class="subtitle is-5" style={{ maxWidth: "350px" }}>Interested in working together? We should schedule a chat. I might also buy you a coffee.</h5>
                         </div>
                         <div class="column">
-                            <form name="contact-coffee" netlify>
+                            <form name="contact-coffee" netlify netlify-honeypot="bot-field" data-netlify="true">
+                                <input type="hidden" name="bot-field" />
                                 <div class="field">
                                     <label class="label">Name</label>
                                     <input class="input" type="text" name="name" placeholder="Type your name..." />
